@@ -113,7 +113,7 @@ exports.topRatedMovies = async(req,res) => {
     })
   } catch (error) {
     res.status(400).json({
-      status: "fail",
+      status: error,
     });
   }
 }
